@@ -12,7 +12,7 @@
         font-family:jost sans-serif;
         font-size: 100px;
         font-weight: 500;
-        animation: hello 3s linear;
+        animation: hi 3s linear;
       }
 
       @keyframes hello{
@@ -24,6 +24,19 @@
           letter-spacing: 0;
           filter: blur(0);
           opacity: 1;
+        }
+      }
+        @keyframes hi{
+        0%{
+          letter-spacing: 1em;
+          filter: blur(12px);
+          opacity: 1;
+          color: dodgerblue;
+        }100%{
+          letter-spacing: 0;
+          filter: blur(0);
+          opacity: 1;
+          color: black;
         }
       }
 
@@ -55,7 +68,7 @@
         i{
           padding: 0px 5px;
         }
-        animation: hello 4s linear;
+        animation: hi 4s linear;
       }
       
 
