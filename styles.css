@@ -1,0 +1,161 @@
+:root{
+  --on-background:rgb(35, 34, 34);
+  --background:rgb(255, 255, 255);
+}
+
+[data-theme="dark"]{
+  --on-background:rgb(255, 255, 255);
+  --background:rgb(18,18,18);
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  min-height: 100px;
+  font-family: 'jost', sans-serif;
+  overflow-x: hidden;
+  color: var(--on-background);
+  background-color: var(--background);
+}
+
+a{
+  text-decoration: none;
+  color: var(--on-background);
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+main{
+  position: relative;
+}
+
+section{
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border: 2px solid red;
+}
+
+h2{
+  font-size: 40px;
+}
+
+.toggle-text{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.theme-switcher{
+  z-index: 100;
+  position: fixed;
+  top: 34px;
+  right: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  i{
+    transform: scale(2);
+    margin-left: 15px;
+  }
+}
+
+.header h1{
+  font-size: 100px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  animation: hi 3s linear;
+}
+
+@keyframes hi{
+  0%{
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 1;
+    color: dodgerblue;
+  }100%{
+    letter-spacing: 0;
+    filter: blur(0);
+    opacity: 1;
+    color: var(--on-background);
+  }
+}
+
+.social-media-icons{
+  font-size: 70px;
+  position: relative;
+  top: -60px;
+  text-align: center;
+  animation: hi 3.5s linear;
+}
+
+.social-media-icons i{
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.social-media-icons i:hover{
+  transform: scale(1.1);
+}
+
+#section2{
+  max-height: 150vh;
+}
+.main-img{
+  height: 50%;
+  width: auto;
+  position: relative;
+  top: -20%;
+  padding: 20px;
+  border: 10px solid var(--on-background);
+}
+
+.image-container{
+  top: 5%;
+  position:relative;
+  height: 100vh;
+}
+
+.small-img{
+  height: 50%;
+  padding: 20px;
+  border: 10px solid var(--on-background);
+}
+.small-img:not(:first-child){
+  margin-left: 20px;
+}
+
+.blog-container{
+  margin: 0 auto;
+  width: 50ch;
+}
+
+.blog-item{
+  margin-bottom: 50px;
+}
+
+/* section=5 */
+.wave{
+  width: 100%;
+}
+
+.wave>svg{
+  position:absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer{
+  position: absolute;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  bottom: 20px;
+  color: white;
+}
